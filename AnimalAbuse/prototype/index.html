@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>PACA | Home</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="main_css.css">
+	</head>
+	<body>
+
+		<div id = 'head'>
+			
+			<!-- Fade -->
+			<!-- <div id = 'h_cr'></div> -->
+
+			
+			
+			<div id='b_nav'>
+				<ul id='nav'>
+					<!-- <center> -->
+						<a href='index.html' title='Home'><img width='75px' style='margin-top:-30px;' src='oh/logo.png'></a>
+						<a href='#b_t' title='Topics' id='b_t_drp'>Topics</a>
+						<a href='#b_p' title='Prevent'>Prevent</a>
+						<a href='about.html' title='About'>About</a>
+					<!-- </center> -->
+				</ul>
+				<div id='dropTpc'>
+					<ul>
+						<a href='circus.html'>Circus</a>
+						<a href='fight.html'>Fight</a>
+						<a href='pets.html'>Pets</a>
+						<a href='warfare.html'>Warfare</a>
+					</ul>
+				</div>
+			</div>
+
+			<div id='b_splash'>
+				<!-- Gotta be have the same text -->
+				<h1 id='h_h1b'>Animal Abuse</h1>
+				<div id='pic'></div>
+			</div>
+		</div>
+
+		<div id = 'body'>
+			
+			<div class='b_wrds'>
+			
+				<div id='b_a'>
+					<h1>Purpose Of Page</h1>
+					<p>The purpose of our page is to bring awareness to animal cruelty. <br> We want people to open their minds and to help us stop animal abuse. <br> We are trying to create a positive change for animals and for them to live happy, free,and healthy. <br>  We want pets to have a family who would take care of them.<br> Pets are our friends... </p>
+					<a href='readmore.html'>read more</a>
+				</div>
+			</div>
+
+			
+			<div class='b_wrds'>
+				<div id='b_t'>
+					<h1><b>Topics</b></h1>
+					<br>
+					<div id='b_ts'>
+						<ul>
+							<li><div id='b_ts_c'>
+								<h2>Circus</h2>
+								<p>
+									Cicus animals lmaooasodisuadiouwioajdisjaio dias di hauisc bsuai dhoua cnusioa cguwio ahcisop aywepd sanchsuioa ycip wqjdop 
+								</p>
+							</div></li>
+
+							<li><div id='b_ts_f'>
+								<h2>Fights</h2>
+								<p>
+									Cicus animals lmaooasodisuadiouwioajdisjaio dias di hauisc bsuai dhoua cnusioa cguwio ahcisop aywepd sanchsuioa ycip wqjdop 
+								</p>
+							</div></li>
+
+							<li><div id='b_ts_p'>
+								<h2>Pets</h2>
+								<p>
+									Cicus animals lmaooasodisuadiouwioajdisjaio dias di hauisc bsuai dhoua cnusioa cguwio ahcisop aywepd sanchsuioa ycip wqjdop 
+								</p>
+							</div></li>
+
+							<li><div id='b_ts_w'>
+								<h2>Warfare</h2>
+								<p>
+									Cicus animals lmaooasodisuadiouwioajdisjaio dias di hauisc bsuai dhoua cnusioa cguwio ahcisop aywepd sanchsuioa ycip wqjdop 
+								</p>
+							</div></li>
+						</ul>
+					</div>	
+				</div>
+		</div>
+
+		<div id = 'foot'>
+			<center>
+				<img src='oh/logo.png' height="230px">
+				<p>PACA</p>
+			</center>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="jsj.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+				/********Header Fade********/
+				var change = setInterval(yeah, 12000);
+				var d = $('#pic');
+				var curtain = $('#h_cr');
+				var images = ['0.jpg','1.jpg', '2.jpg', '3.jpg','4.jpg','5.jpg', '6.jpg', '7.jpg','8.jpg','9.jpg', '10.jpg'];
+				var imgCount = images.length;
+				function yeah() {
+					var randomCount = (Math.floor(Math.random() * imgCount));
+
+				$('#pic').css("background-image","oh/"+ images[randomCount] + ")");
+				}
+				/********Header Fade End********/
+			});
+
+
+		</script>
+	</body>
+</html>

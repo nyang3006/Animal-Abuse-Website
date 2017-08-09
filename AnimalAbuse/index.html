@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>PACA | Home</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="main_css.css">
+
+	<script>
+		window.onbeforeunload = function () {
+		window.scrollTo(0, 0);
+		}
+	</script>
+	</head>
+	<body>
+
+		<div id = 'head'>
+			
+			<!-- Fade -->
+			<div id = 'h_cr'></div>
+
+			<div id='h_wrds'>
+				<!-- Gotta be have the same text -->
+				<h1 id='h_h1'>Animal Abuse</h1>
+			</div>
+			<div id='b_nav'>
+				<ul id='nav'>
+					<!-- <center> -->
+
+						<a href='index.html' title='Home'><img class="f_img" width='75px' height="75px" style='margin-top:-50px;' src='oh/logo.png'></a>
+
+
+						<a href='#b_t' title='Topics' id='b_t_drp'>Topics</a>
+
+						<a href='prevent.html' title='Prevent'>Prevent</a>
+						<a href='about.html' title='About'>About</a>
+					<!-- </center> -->
+				</ul>
+				<div id='dropTpc'>
+					<ul>
+						<a href='circus.html'>Circus</a>
+						<a href='Dogfights.html'>Fight</a>
+						<a href='pets.html'>Pets</a>
+						<a href='warfare.html'>Warfare</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div id = 'body'>
+			
+			<div class='b_wrds'>
+			
+				<div id='b_a'>
+					<h1>Purpose Of Page</h1>
+					<p>Our purpose is to bring awareness to animal cruelty. <br> We want people to open their minds and help us stop animal abuse. <br> We are trying to create a positive change for animals and for them to live happy, free,and healthy. <br>  We want pets to have a family who would care for them.<br> Pets are our friends... </p>
+					<a href='readmore.html' style='text-decoration: underline;'>read more...</a>
+					<br>
+					<br>
+					<br>
+					
+				</div>
+			</div>
+
+			<section style='background: url("https://static.pexels.com/photos/7517/animal-sitting-animals-inside.jpg") 100% fixed;background-size: cover;'>
+
+
+				<div id='a_pi'>
+					<h1 id='a_hii'  style='background: rgba( 230,220,230, 0.3);'><b>Topics</b></h1>
+				</div>
+			</section>
+
+			<div class='b_wrds' >
+				<div id='b_t'>
+					<br>
+					<div id='b_ts'>
+						<div id='ab_fl'>
+							<a href='circus.html' style="text-decoration: none;">
+							<div class='card' id='b_ts_c' class='add_img'>
+								<h2>Circus</h2>
+								
+								<p>
+									Circus animals may seem fun and entertaining to watch for some people but there is another side to the tricks that these animals are<br> <i>forced</i> do.
+								</p>
+								<p><i>read more...</i></p>
+							</div>
+							</a>
+
+							<a href="Dogfights.html">
+							<div class='card'  id='b_ts_f' class='add_img'>
+								<h2>Fights</h2>
+								<p>
+									Animals seem to be cute and harmless to some people but to others they are ruthless and are given drugs to kill others in a<br> ring fight.
+								</p>
+								<p><i>read more...</i></p>
+							</div>
+							</a>
+
+							<a href="pets.html">
+							<div class='card'  id='b_ts_p' class='add_img'>
+								<h2>Pets</h2>
+								<p>
+									Buying a pet should be a way to bond with it and have something to do other than be bored. However, sometimes pet owners <br>get aggresive with their pets.
+								</p>
+								<p><i>read more...</i><br></p>
+							</div>
+							</a>
+
+							<a href="warfare.html">
+							<div class='card'  id='b_ts_w' class='add_img'>
+								<h2>Warfare</h2>
+								<p>
+									Animals used to be used as weapons of war. They would help carry ammunition and sometimes mount some sort of gun as an <br>extra unit.<br>
+								</p>
+								<p><i>read more...</i></p>
+							</div>
+							</a>
+						</div>
+					</div>	
+				</div>
+		</div>
+
+		<div id = 'foot'>
+			<center>
+				<img src='oh/logo.png' width="230px" height="230px" class='f_img' title='PACA'>
+				<p>© 2017 Prevent Animal Cruelty Association. All rights reserved.</p>
+			</center>
+			<div id="links">
+				<a href="https://www.youtube.com/channel/UCHdm4eTIxbfD108iZItsSag"><img src='oh/youtube.png' width="30px" height="30px"></a>
+				<a href="https://www.instagram.com"><img src='oh/insta.png' width="30px" height="30px"></a>
+				<a href="https://www.twitter.com"><img src='oh/twit.png' width="30px" height="30px"></a>
+				<a href="https://www.facebook.com"><img src='oh/face.png' width="30px" height="30px"></a>
+
+				
+				
+
+
+			</div>
+			<div id="links2">
+				<a href="https://www.aspca.org/"><img src="oh/ASPCA.png"></a>
+				<a href="https://www.worldanimalprotection.us.org/wildlife-not-entertainers"><img src="oh/WAP.png"></a>
+				
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="jsj.js"></script>
+
+		<script>
+			$(document).ready(function(){
+
+				/********Header animations********/
+				var change = setInterval(yeah, 12000);
+				var bk = $('#head');
+				var curtain = $('#h_cr');
+				var images = ['0.jpeg','1.jpeg', '2.jpg', '3.jpeg','4.jpeg','5.jpeg', '6.jpeg', '7.jpeg','8.jpeg','9.jpeg', '10.jpeg', '11.jpeg', '12.jpeg'];
+				var imgCount = images.length;
+				function yeah() {
+					var randomCount = (Math.floor(Math.random() * imgCount));
+
+					bk.css("background-image","url(oh/p"+ images[randomCount] + ")");
+				}
+				/********Header Animations End********/
+
+				
+
+			});
+
+
+		</script>
+	</body>
+</html>

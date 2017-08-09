@@ -1,0 +1,16 @@
+#dropTpc{
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(95,95,160,0.95);
+  text-align: center;
+  width:50%;
+  margin-left: 34%;
+  top: 4.96em;
+}
+#dropTpc a{
+
+  padding-bottom: 15px;
+  display: block;
+  text-align: left;
+  color: rgba(230,240,245,0.8);
+}
